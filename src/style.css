@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+#container {
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(rgb(54 54 98), #7b7b8e8a);
+    display: inline-block;
+}
+#calculator {
+    width: 446px;
+    height: 511px;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: -1px 19px 7px;
+    /* margin-top: 40px; */
+    position: relative;
+    top: 40px;
+}
+#history {
+    height: 20%;
+    color: #111;
+    text-align: right;
+    padding-right: 20px;
+    font-weight: bold;
+}
+#history_value{
+    font-size: 15px;
+    font-weight: 100;
+    padding-top: 10px;
+
+}
+#output_value {
+    font-size: 50px;
+    font-weight: 700;
+    color: #111;
+}
+#keyboard{
+    height: 80%;
+}
+#keyboard>.number,#keyboard>.operator{
+    float: left;
+    height: 25%;
+    width: 33.3%;
+    background-color: #111;
+    border: 1px solid rgb(8, 6, 6);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: 0;
+}
+#keyboard>.number:hover,
+#keyboard>.operator:hover{
+    background-color: blue;
+    transform: scale(1.1);
+}
+#keyboard>.number:active,
+#keyboard>.operator:active{
+    font-size: 10px;
+}
+#key_operator {
+    height: auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 414px;
+}
+.operator{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(95, 95, 182);
+    cursor: pointer;
+    outline: 0;
+
+}
+.operator:hover{
+    background-color: rgb(59, 46, 46);
+
+}
+.operator:active{
+    font-size: 10px;
+}
